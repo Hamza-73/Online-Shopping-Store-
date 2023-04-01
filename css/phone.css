@@ -1,0 +1,73 @@
+
+/* Navigation Bar */
+#navbar{
+    flex-direction: column;
+    margin-top: 40px;
+    left: 0;
+    top: 0;
+}
+#navbar ul li{
+    font-size: 20px;
+    padding: 10px 5px;
+}
+
+/* Search Section */
+#search{
+    max-width: 350px;
+    margin: 60px 160px;
+}
+
+/* Home Section */
+#home{
+    height: 140px;
+    padding: 3px 68px ;
+    margin: 100px 300px;
+    /* margin-left: 200px; */
+    margin-bottom: 1px;
+    left: 0;
+}
+#home ::before{
+   height: 140px; 
+   max-height: 500px;    
+}
+
+/* Services Section */
+#services-container{
+    margin-top: 250px;
+}
+#services{
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+/* Discount Section */
+#dis-section .discount img{
+    width: 100vw;
+    height: 40vh;
+}
+#dis-section h3{
+    font-size: 20px;
+}
+/* Customer Care  */
+#customer-care{
+    width: 100vw;
+}
+.customer{
+    flex-direction: column;
+}
+/* Payment Methods */
+
+#payment{
+    flex-direction: column;
+}
+/* Utility Classes */
+.h-primary{
+    font-size: 15px;
+    text-align: center;
+}
+.h-secondary{
+    text-align: center;
+    font-size: 1.9rem;
+   
+    
+}

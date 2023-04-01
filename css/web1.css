@@ -1,0 +1,274 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Bar */
+#navbar {
+    height: 100px;
+    width: 700px;
+    /* border: 2px solid white; */
+    margin: auto;
+    /* background-color: white;     */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: 100px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#navbar::before {
+    content: "";
+    position: absolute;
+    background-color: black;
+    width: 100%;
+    height: 620px;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+/* Navigation Bar : logo */
+#logo {
+    margin: 34px 45px;
+}
+
+#logo img {
+
+    /* margin: 16px 19px; */
+    margin-left: 105x;
+    height: 90px;
+    border-radius: 40px;
+}
+
+/* Navigation Bar : lists */
+#navbar ul {
+    display: flex;
+}
+
+#navbar ul li {
+    list-style: none;
+    font-size: 1.3rem;
+}
+
+#navbar ul li a {
+    padding: 20px 15px;
+    text-decoration: none;
+    color: rgb(255, 102, 0);
+    /* font-weight: bold; */
+    display: block;
+    margin: 0px 10px;
+    border-radius: 30px;
+}
+
+
+#navbar ul li a:hover {
+    background-color: rgb(255, 102, 0);
+    color: white;
+    /* text-decoration: underline; */
+}
+/* Search Section */
+#search{
+    display: flex;
+    border: 0;
+    width: 100%;
+    max-width: 500px;
+    border-radius: 50px;
+    height: 35px;
+    align-items: center;
+    justify-content: center;
+    padding: 1px 20px;
+    margin: 37px 390px;
+    background-color: rgba(255,255,255,0.2);    
+}
+#search input{
+      background: transparent;
+      border: 0;
+      flex: 1;
+      outline: none;
+      padding: 24px 20px;
+      font-size: 20px;
+}
+::placeholder{
+    color: #cac7ff;
+}
+#search button{
+    border: 0;
+    border-radius: 30px ;
+    width: 35px;
+    height: 35px;
+    cursor: pointer;
+    background-color: rgb(255, 102, 0);
+}
+#search button img{
+    height: 20px;
+}
+/* Home SECTION */
+#home {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 60px 15px;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url('../img/home3.jpg') no-repeat center center/cover;
+    width: 100%;
+    height: 620px;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    opacity: 0.9;
+}
+
+#home p {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: white;
+}
+
+#home .btn {
+    font-size: 1.3rem;
+    padding: 10px 120px;
+    margin-top: 15px;
+    border-radius: 10px;
+    text-align: center;
+    border: 1px solid white;
+    background: transparent;
+    cursor: pointer;
+    color: white;
+    transition: 1s;
+}
+#home .btn:hover{
+    border: #ED5219;
+    background-color: rgb(255, 102, 0);
+}
+
+/* Services Section */
+
+#services-container {
+    margin-top: 70px;
+    /* background-color: rgb(220, 83, 20); */
+}
+
+#services {
+    display: flex;
+}
+
+#services .box {
+    border: 2px solid orangered;
+    /* background-color: rgb(235, 136, 101); */
+    color: black;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.5rem;
+    padding: 10px 30px;
+    border-radius: 20px;
+    margin: 5px 15px;
+
+}
+
+#services .box:hover {
+    cursor: pointer;
+}
+
+#services .box img {
+    height: 150px;
+    display: block;
+    margin: auto;
+    width: 200px;
+    padding: 20px 20px;
+}
+
+/* Sale Section  */
+#dis-section {
+    margin-top: 60px;
+}
+
+#dis-section .discount img {
+    height: 400px;
+    display: block;
+    margin: auto;
+}
+#dis-section span{
+    animation: size 2s 2s infinite;
+}
+@keyframes size {
+    0%{
+        font-size: 10px;
+    }
+    
+    100%{
+        font-size: 50px;
+    }
+    
+}
+
+/* Customer-Care */
+#customer-care {
+    background-color: #ED5219;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.customer {
+    display: flex;
+    justify-content: space-between;
+}
+
+.c-care {
+    font-weight: bold;
+    padding: 20px;
+}
+
+#customer-care .customer img {
+    height: 100px;
+    margin: 10px;
+}
+
+#customer-care .customer .img2 {
+    height: 100px;
+    border-radius: 50px;
+}
+
+/* Social media and Payment Method */
+#payment {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    margin: 30px 50px;
+}
+
+#payment img {
+    height: 100px;
+    margin: 10px;
+}
+
+#payment h3 {
+    font-size: 1.3rem;
+}
+
+/* Utility Classes */
+.h-primary {
+    font-family: 'Pacifico', cursive;
+    font-size: 3.8rem;
+    padding: 12px;
+    color: rgb(251, 84, 23);
+}
+
+.h-secondary {
+    color: rgb(251, 84, 23);
+    font-family: 'Pacifico', cursive;
+    font-size: 2.0rem;
+    padding: 12px;
+
+}
+
+.center {
+    text-align: center;
+}
